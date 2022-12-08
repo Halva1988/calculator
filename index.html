@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator animate__animated animate__zoomInDown">
+        <div class="calculator__header">
+            <img src="./img/Icon.png" alt="img" class="header__img">
+            <img src="./img/Title.png" alt="Title" class="header__title">
+        </div>
+        <form class="calculator__form">
+            <input type="text" class="form__first-number input" id="first-number" name="first-number"
+                placeholder="Введи число" autocomplete="off">
+            <label for="first-number" class="form__first-label label">Первое число</label>
+            <input type="text" class="form__symbol input" id="symbol-form" name="symbol" placeholder="(+, -, /, *)"
+                autocomplete="off">
+            <label for="symbol-form" class="form__symbol-label label">Введи символ</label>
+            <input type="text" class="form__second-number input" id="second-number" name="second-number"
+                placeholder="Введи число" autocomplete="off">
+            <label for="second-number" class="form__second-label label">Второе число</label>
+            <div class="form__result" id="form__result"></div>
+            <button class="form__submit" id="form__submit">Результат</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
